@@ -9,10 +9,11 @@ header {
 	width: 100%;
 	z-index: 1000;
 	transition: ease .40s;
+	background-color: white;
 }
 
 nav {
-	background-color: transparent;
+	
 	color: rgb(0, 0, 0);
 	display: flex;
 	justify-content: space-between;
@@ -63,7 +64,20 @@ nav {
 
 .menu li a:hover,
 .user li a:hover {
-	text-decoration: underline;
+	color: #58b4ae;
+}
+.list-item {
+    display: flex;
+	flex-direction: column;
+    align-items: center;
+	
+}
+.list-item a{
+	color:  #58b4ae;
+}
+
+.list-item .line {
+    margin-left: 5px; 
 }
 
 /********************** home section ************************/
@@ -242,20 +256,21 @@ nav {
 
 .row {
 	display: flex;
-	
-	
+
+
 }
 
 .text {
 	width: 50%;
-  box-sizing: border-box;
-  padding-right: 5%;
-  background-color: rgb(255, 245, 237);
-  height: 25%;
-  margin-top: 8%;
-  margin-left: 4%;
+	box-sizing: border-box;
+	padding-right: 5%;
+	background-color: rgb(255, 245, 237);
+	height: 25%;
+	margin-top: 8%;
+	margin-left: 4%;
 }
-.text span{
+
+.text span {
 	font-size: 8px;
 	letter-spacing: 2px;
 }
@@ -270,3 +285,77 @@ nav {
 .q-img img {
 	width: 100%;
 }
+
+/*********************** footer */
+
+.footer {
+	background-color:wwhite;
+	color: black;
+	margin: 10px 15%;
+}
+
+.footer-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.footer-section {
+	margin-bottom: 20px;
+}
+
+.logo-f {
+	display: flex;
+}
+
+.footer-section h3 {
+	font-size: 18px;
+
+}
+.footer-section p {
+	font-size:10px;
+
+}
+
+.footer-section img {
+	width: 20px;
+	height: 20px;
+	padding: 8% 4%;
+
+}
+
+.footer-section ul {
+	list-style: none;
+	padding: 0;
+}
+
+.footer-section ul li {
+	margin-bottom: 8px;
+}
+.footer a {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.footer a:hover {
+	color: #58b4ae;
+}
+.social{
+	display: flex;
+	flex-direction: column;
+}
+.social a{
+	
+	height: 20px;
+	width: 20px;
+	display: inline-flex;
+	border-radius: 15px;
+	padding: 0;
+	margin-bottom: 8px;
+}
+.social a img{
+	padding-right: 50%;
+}
+
+
