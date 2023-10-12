@@ -1,5 +1,5 @@
 body {
-	
+
 	margin: 0;
 	padding: 0;
 }
@@ -224,34 +224,49 @@ nav {
 #p-img {
 	padding-top: 10%;
 }
+
 /************************** Customer quotes */
-.quote-title span{
+.quote-title span {
 	color: #F5AA24;
-	
+
 }
-.quote-title h2{
+
+.quote-title h2 {
 	text-align: center;
 }
+
 .quotes {
-    width: 100%; 
-    box-sizing: border-box;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	
+	
 }
 
-.text,
+.text {
+	width: 50%;
+  box-sizing: border-box;
+  padding-right: 5%;
+  background-color: rgb(255, 245, 237);
+  height: 25%;
+  margin-top: 8%;
+  margin-left: 4%;
+}
+.text span{
+	font-size: 8px;
+	letter-spacing: 2px;
+}
+
+
 .q-img {
-    width: 50%;
-    box-sizing: border-box;
-    padding: 0 10px; 
+	width: 50%;
+	box-sizing: border-box;
+	padding: 0 10px;
 }
 
 .q-img img {
-    width: 100%; 
+	width: 100%;
 }
-
-
-
