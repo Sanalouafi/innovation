@@ -231,10 +231,4 @@ nav {
 .quote-title h2{
 	text-align: center;
 }
-.row{
-	display: flex;
-	width: 100%;
-}
-#text{
-	width: 50%;
-}
+
