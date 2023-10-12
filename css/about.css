@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    font-family: 'Paytone One', sans-serif;
+}
+.right-container{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10% 0;
+}
+.row-items{
+    display: flex;
+}
+.l-text{
+    width: 50%;
+	box-sizing: border-box;
+	letter-spacing: 4px;
+    margin-left: 4%;
+    height: 25%;
+
+
+}
+.l-text h2{
+    font-size: 48px;
+    margin-top: 8%;
+    padding-right: 5%;
+	
+    text-align: center;
+}
+.l-text h4{
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 10%;
+    padding-left: 10%;
+}
+.l-text p{
+    font-family: 'arial';
+    font-size: 12px;
+    padding-top: 5%;
+    padding-left: 10%;
+    line-height: 32px;
+    text-align: left;
+}
+
+.l-text h2 span{
+    color: #01B4AC;
+}
+.l-text h4 span{
+    color: #01B4AC;
+}
+.r-img{
+    width: 50%;
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+.r-img img{
+    width: 100%;
+}
+.btn{
+    margin-top: 10%;
+
+}
+.l-btn{
+    display: inline-block;
+	text-decoration: none;
+	font-size: 16px;
+	padding: 20px 30px;
+	background: #01B4AC;
+	color: black;
+	border-radius: 4px;
+	transition: ease .40s;
+}
+.l-btn:hover{
+    background: #05e3d8;
+	color: whitesmoke;
+	transform: scale(1.1);
+}
