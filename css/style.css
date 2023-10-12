@@ -1,5 +1,5 @@
 body {
-	font-family: 'B612', sans-serif;
+	
 	margin: 0;
 	padding: 0;
 }
@@ -25,6 +25,7 @@ nav {
 }
 
 .logo span {
+	font-family: 'Paytone One', sans-serif;
 	font-size: 26px;
 }
 
@@ -91,7 +92,7 @@ nav {
 	font-size: 24px;
 	line-height: 1.2;
 	color: black;
-	font-family: 'B612', sans-serif;
+	font-family: 'Paytone One', sans-serif;
 	letter-spacing: 4px;
 	margin-bottom: 20px;
 	text-align: center;
@@ -103,7 +104,7 @@ nav {
 	font-size: 12px;
 	line-height: 1.2;
 	color: black;
-	font-family: 'B612', sans-serif;
+	font-family: 'Paytone One', sans-serif;
 	letter-spacing: 4px;
 	margin-bottom: 20px;
 	text-align: center;
@@ -144,7 +145,7 @@ nav {
 	font-size: 20px;
 	line-height: 1.2;
 	color: black;
-	font-family: 'B612', sans-serif;
+	font-family: 'Paytone One', sans-serif;
 	margin-bottom: 20px;
 	text-align: center;
 	width: 50%;
@@ -155,7 +156,7 @@ nav {
 	font-size: 12px;
 	line-height: 3;
 	color: black;
-	font-family: 'B612', sans-serif;
+	font-family: 'Paytone One', sans-serif;
 	letter-spacing: 4px;
 	margin-bottom: 20px;
 	text-align: center;
@@ -187,7 +188,7 @@ nav {
 	margin-bottom: 5%;
 	text-align: center;
 	background-color: #F4EBE4;
-
+	font-family: 'Paytone One', sans-serif;
 	font-size: 12px;
 
 }
@@ -210,7 +211,7 @@ nav {
 .card-img h6 {
 	position: absolute;
 	z-index: 1000;
-
+	font-family: 'Paytone One', sans-serif;
 	color: white;
 	font-size: 8px;
 	font-weight: bolder;
@@ -231,4 +232,26 @@ nav {
 .quote-title h2{
 	text-align: center;
 }
+.quotes {
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text,
+.q-img {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 10px; 
+}
+
+.q-img img {
+    width: 100%; 
+}
+
+
 
