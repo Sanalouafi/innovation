@@ -9,7 +9,7 @@ body{
 .right-container{
     width: 100%;
     box-sizing: border-box;
-    padding: 10% 0;
+    
 }
 .row-items{
     display: flex;
@@ -27,7 +27,6 @@ body{
     font-size: 48px;
     margin-top: 8%;
     padding-right: 5%;
-	
     text-align: center;
 }
 .l-text h4{
