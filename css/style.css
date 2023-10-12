@@ -1,0 +1,240 @@
+body {
+	font-family: 'B612', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+	transition: ease .40s;
+}
+
+nav {
+	background-color: transparent;
+	color: rgb(0, 0, 0);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+}
+
+.logo {
+	padding-left: 10%;
+}
+
+.logo span {
+	font-size: 26px;
+}
+
+.logo img {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+.menu {
+	padding-right: 15%;
+}
+
+.user {
+	padding-right: 10%;
+}
+
+.menu,
+.user {
+	list-style: none;
+	display: flex;
+
+}
+
+.menu li,
+.user li {
+	margin: 0 10px;
+}
+
+.menu li a,
+.user li a {
+	color: black;
+	text-decoration: none;
+}
+
+.menu li a:hover,
+.user li a:hover {
+	text-decoration: underline;
+}
+
+/********************** home section ************************/
+.home {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	/* background: url(../img/home.jpg); */
+	background-position: center;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	align-items: center;
+
+}
+
+.imghome {
+	padding-left: 20%;
+	padding-top: 0;
+}
+
+.home-text {
+	margin-top: 10%;
+}
+
+.home-text h1 {
+	font-size: 24px;
+	line-height: 1.2;
+	color: black;
+	font-family: 'B612', sans-serif;
+	letter-spacing: 4px;
+	margin-bottom: 20px;
+	text-align: center;
+	width: 50%;
+	padding-left: 25%;
+}
+
+.home-text p {
+	font-size: 12px;
+	line-height: 1.2;
+	color: black;
+	font-family: 'B612', sans-serif;
+	letter-spacing: 4px;
+	margin-bottom: 20px;
+	text-align: center;
+	width: 50%;
+	padding-left: 25%;
+}
+
+.btn {
+	text-align: center;
+}
+
+.home-btn {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 16px;
+	padding: 15px 30px;
+	background: #05845cbf;
+	color: black;
+	border-radius: 4px;
+	transition: ease .40s;
+}
+
+.home-btn:hover {
+	background: #10d093bf;
+	color: whitesmoke;
+	transform: scale(1.1);
+}
+
+/************************************* blog section */
+
+.blog-container {
+	width: 100%;
+	background-color: #FFF5ED;
+}
+
+.blog-text h2 {
+	padding-top: 5%;
+	font-size: 20px;
+	line-height: 1.2;
+	color: black;
+	font-family: 'B612', sans-serif;
+	margin-bottom: 20px;
+	text-align: center;
+	width: 50%;
+	padding-left: 25%;
+}
+
+.blog-text p {
+	font-size: 12px;
+	line-height: 3;
+	color: black;
+	font-family: 'B612', sans-serif;
+	letter-spacing: 4px;
+	margin-bottom: 20px;
+	text-align: center;
+	width: 50%;
+	padding-left: 25%;
+}
+
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	max-width: 70%;
+	gap: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 5%;
+	margin: 5% 25%;
+	max-height: 70%;
+}
+
+.card {}
+
+.card-text h3 {
+	font-size: 12px;
+}
+
+.bg-p {
+	padding: 5% 0;
+	margin-bottom: 5%;
+	text-align: center;
+	background-color: #F4EBE4;
+
+	font-size: 12px;
+
+}
+
+.card-img {
+	position: relative;
+	width: 100%;
+}
+
+.card-img img {
+	max-width: 100%;
+}
+
+.card-text p {
+	letter-spacing: 0.4px;
+	font-size: 7px;
+	font-weight: lighter;
+}
+
+.card-img h6 {
+	position: absolute;
+	z-index: 1000;
+
+	color: white;
+	font-size: 8px;
+	font-weight: bolder;
+	text-align: center;
+	padding-top: 35%;
+
+
+}
+
+#p-img {
+	padding-top: 10%;
+}
+/************************** Customer quotes */
+.quote-title span{
+	color: #F5AA24;
+	
+}
+.quote-title h2{
+	text-align: center;
+}
+.row{
+	display: flex;
+	width: 100%;
+}
+#text{
+	width: 50%;
+}
