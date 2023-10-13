@@ -1,17 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
-
+    font-family:'Poppins';
 }
 
-body {
-    font-family: 'Paytone One', sans-serif;
-}
 
 .right-container {
     width: 100%;
     box-sizing: border-box;
-
+    padding-top: 10%;
 }
 
 .row-items {
@@ -21,7 +20,7 @@ body {
 .l-text {
     width: 50%;
     box-sizing: border-box;
-    letter-spacing: 4px;
+    
     margin-left: 4%;
     height: 25%;
 
@@ -43,7 +42,6 @@ body {
 }
 
 .l-text p {
-    font-family: 'arial';
     font-size: 12px;
     padding-top: 5%;
     padding-left: 10%;
@@ -92,7 +90,7 @@ body {
 }
 
 /******************* hero section */
- .hero-container {
+.hero-container {
     width: 100%;
     background-color: #F9FAFC;
 }
@@ -102,7 +100,7 @@ body {
     font-size: 20px;
     line-height: 1.2;
     color: black;
-    font-family: 'Paytone One', sans-serif;
+
     margin-bottom: 20px;
     text-align: center;
     width: 50%;
@@ -113,13 +111,14 @@ body {
     font-size: 12px;
     line-height: 3;
     color: black;
-    font-family: 'Paytone One', sans-serif;
-    letter-spacing: 4px;
+
+    
     margin-bottom: 20px;
     text-align: center;
     width: 50%;
     padding-left: 25%;
 }
+
 .hero-cards {
     display: flex;
     justify-content: space-around;
@@ -128,40 +127,44 @@ body {
     margin: 0% 25%;
     gap: 15px;
 }
+
 .hero-img img {
-    
+
     width: 100%;
-   object-fit: cover; 
-   height: 100%;
+    object-fit: cover;
+    height: 100%;
 }
+
 .card-text p {
 
     font-size: 10px;
     color: black;
-    font-family: 'Paytone One', sans-serif;
+
     padding: 5px 0;
-   
-    
+
+
 
 }
+
 .card-text h5 {
 
     font-size: 10px;
     color: black;
-    font-family: 'Paytone One', sans-serif;
     padding-top: 25%;
-   
+
 
 }
-#card2 h5{
+
+#card2 h5 {
     padding-top: 32%;
 }
+
 .hero-card {
     width: 100%;
-    height: 350px; 
+    height: 350px;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden; 
+    overflow: hidden;
     margin-bottom: 20px;
 }
 
@@ -169,24 +172,78 @@ body {
 
 
 /*************************** social section */
-.social-container { 
-    position: relative; 
+.img-sub {
+    position: relative;
+
+}
+
+.img-sub img {
     width: 100%;
 }
-.social-container img{  
-    width: 100%;
-}
-.subscribe{
+
+.row-item {
+    background-color: #F9FAFC;
     position: absolute;
     z-index: 1000;
-}
-.row-subs{
-    width: 100%;
     display: flex;
-    background-color: #F9FAFC;
-    margin: 10% 25%;
+    width: 70%;
+    margin: 05% 15%;
+    padding: 20px 20px;
 }
-.subs-input,.subs-text{
+
+.row-text,
+.form {
     width: 50%;
-   
+}
+
+.row-text h3 {
+    font-size: 20px;
+
+}
+
+.row-text p {
+    font-size: 10px;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+}
+
+.form input,
+button {
+    height: 6vh;
+}
+
+.form input {
+    background-color: #ecf0f6;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    color: whitesmoke;
+    background-color: #DB4A87;
+    border: #DB4A87;
+    padding: 0 20px;
+    border-radius: 5px;
+}
+
+#sub::placeholder {
+    text-align: center;
+
+}
+
+#sub {
+    width: 68%;
+}
+
+.form label {
+    font-size: 10px;
+    padding-top: 5%;
+}
+
+.check {
+    display: inline-flex;
 }

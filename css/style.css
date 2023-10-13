@@ -1,10 +1,13 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-	margin: 0;
+* {
 	padding: 0;
+	margin: 0;
+	font-family: 'Poppins', 'sans serif';
 }
 
 header {
+	font-size: 14px;
 	position: fixed;
 	width: 100%;
 	z-index: 1000;
@@ -13,7 +16,7 @@ header {
 }
 
 nav {
-	
+
 	color: rgb(0, 0, 0);
 	display: flex;
 	justify-content: space-between;
@@ -23,11 +26,11 @@ nav {
 
 .logo {
 	padding-left: 10%;
+
 }
 
 .logo span {
-	font-family: 'Paytone One', sans-serif;
-	font-size: 26px;
+	font-size: 20px;
 }
 
 .logo img {
@@ -66,18 +69,21 @@ nav {
 .user li a:hover {
 	color: #58b4ae;
 }
+
 .list-item {
-    display: flex;
+	display: flex;
 	flex-direction: column;
-    align-items: center;
-	
+	align-items: center;
+
 }
-.list-item a{
-	color:  #58b4ae;
+
+.list-item a {
+	color: #58b4ae;
+	font-size: 14px;
 }
 
 .list-item .line {
-    margin-left: 5px; 
+	margin-left: 5px;
 }
 
 /********************** home section ************************/
@@ -85,7 +91,7 @@ nav {
 	position: relative;
 	width: 100%;
 	height: 100vh;
-	
+
 	background-position: center;
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
@@ -103,10 +109,9 @@ nav {
 }
 
 .home-text h1 {
-	font-size: 24px;
+	font-size: 20px;
 	line-height: 1.2;
 	color: black;
-	font-family: 'Paytone One', sans-serif;
 	letter-spacing: 4px;
 	margin-bottom: 20px;
 	text-align: center;
@@ -118,8 +123,6 @@ nav {
 	font-size: 12px;
 	line-height: 1.2;
 	color: black;
-	font-family: 'Paytone One', sans-serif;
-	letter-spacing: 4px;
 	margin-bottom: 20px;
 	text-align: center;
 	width: 50%;
@@ -159,7 +162,6 @@ nav {
 	font-size: 20px;
 	line-height: 1.2;
 	color: black;
-	font-family: 'Paytone One', sans-serif;
 	margin-bottom: 20px;
 	text-align: center;
 	width: 50%;
@@ -167,11 +169,9 @@ nav {
 }
 
 .blog-text p {
-	font-size: 12px;
+	font-size: 15px;
 	line-height: 3;
 	color: black;
-	font-family: 'Paytone One', sans-serif;
-	letter-spacing: 4px;
 	margin-bottom: 20px;
 	text-align: center;
 	width: 50%;
@@ -202,7 +202,6 @@ nav {
 	margin-bottom: 5%;
 	text-align: center;
 	background-color: #F4EBE4;
-	font-family: 'Paytone One', sans-serif;
 	font-size: 12px;
 
 }
@@ -217,17 +216,15 @@ nav {
 }
 
 .card-text p {
-	letter-spacing: 0.4px;
-	font-size: 7px;
-	font-weight: lighter;
+	color: black;
+	font-size: 10px;
 }
 
 .card-img h6 {
 	position: absolute;
 	z-index: 1000;
-	font-family: 'Paytone One', sans-serif;
 	color: white;
-	font-size: 8px;
+	font-size: 10px;
 	font-weight: bolder;
 	text-align: center;
 	padding-top: 35%;
@@ -256,7 +253,7 @@ nav {
 
 .row {
 	display: flex;
-
+	padding-bottom: 10%;
 
 }
 
@@ -271,8 +268,8 @@ nav {
 }
 
 .text span {
-	font-size: 8px;
-	letter-spacing: 2px;
+	font-size: 10px;
+
 }
 
 
@@ -289,9 +286,12 @@ nav {
 /*********************** footer */
 
 .footer {
-	background-color:wwhite;
+	background-color: white;
 	color: black;
 	margin: 10px 15%;
+	font-size: 12px;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 
 .footer-content {
@@ -309,18 +309,18 @@ nav {
 }
 
 .footer-section h3 {
-	font-size: 18px;
-
+	font-size: 14px;
+padding-bottom: 15px;
 }
+
 .footer-section p {
-	font-size:10px;
+	font-size: 10px;
 
 }
 
 .footer-section img {
 	width: 20px;
 	height: 20px;
-	margin-top: 13%;
 	padding-right: 5%;
 
 }
@@ -333,6 +333,7 @@ nav {
 .footer-section ul li {
 	margin-bottom: 8px;
 }
+
 .footer a {
 	color: rgb(0, 0, 0);
 	text-decoration: none;
@@ -342,12 +343,14 @@ nav {
 .footer a:hover {
 	color: #58b4ae;
 }
-.social{
+
+.social {
 	display: flex;
 	flex-direction: column;
 }
-.social a{
-	
+
+.social a {
+
 	height: 20px;
 	width: 20px;
 	display: inline-flex;
@@ -355,8 +358,7 @@ nav {
 	padding: 0;
 	margin-bottom: 8px;
 }
-.social a img{
+
+.social a img {
 	padding-right: 50%;
 }
-
-
