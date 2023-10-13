@@ -3,18 +3,37 @@
 * {
     padding: 0;
     margin: 0;
-    font-family:'Poppins';
+    font-family: 'Poppins';
 }
-body{
+
+body {
     background-color: rgb(255, 255, 255);
 }
 
 .l-text h3 span {
     color: #4D7BFF;
 }
+
 .l-text h3 {
     font-size: 48px;
     margin-top: 8%;
     padding-right: 5%;
     text-align: center;
+}
+/****************************questions section */
+.bg-support{
+    position: relative;
+    
+}
+.bg-support img{
+width: 100%;
+}
+.support-title{
+    position: absolute;
+    z-index: 1000;
+    display: inline-flex;
+}
+.support-title img{
+    width: 10px;
+    height: 10px;
 }
