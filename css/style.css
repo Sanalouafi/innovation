@@ -288,10 +288,9 @@ nav {
 .footer {
 	background-color: white;
 	color: black;
-	margin: 10px 15%;
+	padding: 15%;
 	font-size: 12px;
-	padding-top: 5%;
-	padding-bottom: 5%;
+	
 }
 
 .footer-content {
