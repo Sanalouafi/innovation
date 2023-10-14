@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', 'sans serif';
+
+
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+   
 .r-text h2 {
     font-size: 48px;
     margin-top: 8%;
@@ -22,4 +39,68 @@
     background: #7ba2f1;
     color: whitesmoke;
     transform: scale(1.1);
+}
+/************************************** services */
+.services{
+    padding-top: 5%;
+}
+.services-text h2,p{
+text-align: center;
+}
+.services-text p{
+    font-size: 14px;
+    padding-top: 10px;
+}
+.service-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10%;
+    padding-top:5%;
+    padding-bottom: 10%;
+    margin:0 10%;
+
+}
+.sevice-card{
+    display: flex;
+    padding-top: 10%;
+    box-sizing: border-box;
+
+}
+.img-setvice img{
+    width: 40px;
+    height: 40px;
+    padding-right: 20px;
+}
+.sevice-text p{
+ text-align: left;
+ font-size: 12px;
+}
+.sevice-text a{
+    color: #7ba2f1;
+    font-size: 12px;
+    transition: ease .50s;
+}
+
+
+.service-text a:hover {
+    color: #3467ce;
+    font-size: 14px;
+    transform: scale(1.1); 
+}
+
+
+
+/****************** client choices */
+.choices{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20%;
+}
+.line-choice{
+    display: flex;
+    flex-direction: column;
+}
+
+.line-choice img{
+    width: 50%;
 }
