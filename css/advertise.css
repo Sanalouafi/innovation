@@ -1,0 +1,25 @@
+.r-text h2 {
+    font-size: 48px;
+    margin-top: 8%;
+    padding-right: 5%;
+    text-align: center;
+}
+.r-text h2 span {
+    color: #5B80CC;
+}
+.r-btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px 10%;
+    background: #5B80CC;
+    color: whitesmoke;
+    border-radius: 4px;
+    transition: ease .40s;
+}
+
+.r-btn:hover {
+    background: #7ba2f1;
+    color: whitesmoke;
+    transform: scale(1.1);
+}
