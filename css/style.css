@@ -253,7 +253,6 @@ nav {
 
 .row {
 	display: flex;
-	padding-bottom: 10%;
 
 }
 
@@ -288,7 +287,7 @@ nav {
 .footer {
 	background-color: white;
 	color: black;
-	padding: 15%;
+	padding: 5%;
 	font-size: 12px;
 	
 }
@@ -313,7 +312,7 @@ padding-bottom: 15px;
 }
 
 .footer-section p {
-	font-size: 10px;
+	font-size: 12px;
 
 }
 
@@ -356,8 +355,4 @@ padding-bottom: 15px;
 	border-radius: 15px;
 	padding: 0;
 	margin-bottom: 8px;
-}
-
-.social a img {
-	padding-right: 50%;
 }

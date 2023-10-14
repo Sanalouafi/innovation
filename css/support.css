@@ -3,7 +3,14 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Poppins';
+    font-family: 'Poppins', 'sans serif';
+    box-sizing: border-box;
+
+
+}
+
+a {
+    text-decoration: none;
 }
 
 body {
@@ -26,7 +33,7 @@ body {
     background: url(../img/bg-support.png);
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 5%;
+    width: 100%;
     padding-bottom: 15%;
 }
 
@@ -42,6 +49,7 @@ body {
 
 .quetions-text {
     display: flex;
+    padding-left: 5%;
 }
 
 .quetions-text img {
@@ -51,7 +59,7 @@ body {
 
 .support-title h4 {
     padding-top: 5%;
-    padding-bottom: 15%;
+    padding-bottom: 10%;
     font-size: 26px;
 }
 
@@ -59,9 +67,97 @@ body {
 .support-title h4 span {
     color: #FFA419;
 }
+
 .quetions-text p {
     padding-bottom: 45px;
-  padding-top: 5px;
-  padding-left: 25px;
-    
+    padding-top: 5px;
+    padding-left: 25px;
+
 }
+
+/* form */
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.contact-form {
+    width: 50%;
+    padding: 5%;
+}
+
+.contact-image {
+    width: 50%;
+}
+
+.contactUs-text h3 {
+    text-align: center;
+    color: #516EFE;
+    font-size: 26px;
+    padding-bottom: 5px;
+}
+
+.contactUs-text p {
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 5%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10%;
+}
+
+.form-group input {
+
+    font-size: 1em;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: rgba(199, 199, 199, 0.5);
+}
+
+.form-group textarea {
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: rgba(199, 199, 199, 0.5);
+    height: 150px;
+}
+
+.form-group label {
+    color: #000000;
+    text-align: left;
+    width: 25%;
+}
+
+
+
+
+.contact-image img {
+    max-width: 100%;
+    padding-top: 15%;
+}
+
+.contactUs-btn {
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 40%;
+    margin-top: 5%;
+    padding: 15px 20%;
+    background: #4D7BFF;
+    color: whitesmoke;
+    border-radius: 10px;
+    transition: ease .40s;
+    cursor: pointer;
+
+}
+
+.contactUs-btn:hover {
+    color: whitesmoke;
+    background: #86a7ff;
+    transform: scale(1.1);
+}
+
+/*end form */
