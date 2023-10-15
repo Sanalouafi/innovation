@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
-    font-family:'Poppins';
+	padding: 0;
+	margin: 0;
+	font-family: 'Poppins';
 }
 
 header {
@@ -100,8 +100,8 @@ nav {
 }
 
 .imghome {
-	padding-left: 20%;
-	padding-top: 0;
+	max-width: 100%;
+	padding-left: 25%;
 }
 
 .home-text {
@@ -252,12 +252,13 @@ nav {
 }
 
 .row {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 
 }
 
 .text {
-	width: 50%;
+
 	box-sizing: border-box;
 	padding-right: 5%;
 	background-color: rgb(255, 245, 237);
@@ -273,7 +274,7 @@ nav {
 
 
 .q-img {
-	width: 50%;
+
 	box-sizing: border-box;
 	padding: 0 10px;
 }
@@ -289,13 +290,13 @@ nav {
 	color: black;
 	padding: 5%;
 	font-size: 12px;
-	
+
 }
 
 .footer-content {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	padding-left: 15%;
 }
 
 .footer-section {
@@ -308,7 +309,7 @@ nav {
 
 .footer-section h3 {
 	font-size: 14px;
-padding-bottom: 15px;
+	padding-bottom: 15px;
 }
 
 .footer-section p {
@@ -355,6 +356,68 @@ padding-bottom: 15px;
 	border-radius: 15px;
 	margin-bottom: 8px;
 }
-.social img{
+
+.social img {
 	padding-right: 5px;
+}
+
+@media screen and (max-width: 712px) {
+	.row {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+
+	}
+
+	.footer-content {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+
+}
+
+@media (max-width: 712px) {
+
+	.imghome img {
+		max-width: 100%;
+		
+	}
+	.home-text{
+		padding-top: 10%;
+	}
+	.home-text h1 {
+		font-size: 14px;
+		padding-top: 10%;
+		width: 90%;
+		padding-left: 5%;
+	}
+
+	.home-text p {
+		font-size: 12px;
+		width: 90%;
+		padding-left: 5%;
+	}
+
+	.home-btn {
+		font-size: 12px;
+		padding: 10px 20px;
+	}
+	.blog-text h2{
+		font-size: 12px;
+	}
+	.blog-text p{
+		font-size: 10px;
+	}
+	.cards{
+		grid-template-columns: repeat(1,1fr);
+	}
+	.text{
+		font-size: 10px;
+		height: 100%;
+		margin-right: 4%;
+	}
+	.text span{
+		font-size: 7px;
+	}
+
 }
