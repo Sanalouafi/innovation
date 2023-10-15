@@ -123,10 +123,17 @@ p {
     width: 100%;
 
 }
+.choices-container{
+    padding-top: 10%;
+}
 
 .choice h6 {
     font-size: 14px;
 }
 .row-container{
     display: flex;
+}
+.img-choice img{
+    width: 50%;
+
 }
