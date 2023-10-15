@@ -3,13 +3,14 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Poppins';
+    font-family: 'Poppins','sans-serif';
+    box-sizing: border-box;
 }
 
 
 .right-container {
     width: 100%;
-    box-sizing: border-box;
+    
     padding-top: 10%;
 }
 
@@ -20,7 +21,7 @@
 
 .l-text {
 
-    box-sizing: border-box;
+    
 
     margin-left: 4%;
     height: 25%;
@@ -60,7 +61,7 @@
 
 .r-img {
 
-    box-sizing: border-box;
+    
     padding: 0 10px;
 }
 
