@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins', 'sans serif';
-
+    box-sizing: border-box;
 
 }
 
@@ -72,14 +72,14 @@ p {
 .sevice-card {
     display: flex;
     padding-top: 10%;
-    box-sizing: border-box;
+
 
 }
 
 .img-setvice img {
     width: 40px;
     height: 40px;
-    padding-right: 20px;
+
 }
 
 .sevice-text p {
@@ -87,22 +87,24 @@ p {
     font-size: 12px;
 }
 
-.sevice-text a {
+.sevice-text {
+    padding-left: 5%;
+}
+
+.sevice-text a,
+.check-choices a {
     color: #7ba2f1;
     font-size: 12px;
     transition: ease 0.4s;
     transform: scale(1);
-
 }
 
-.sevice-text a:hover {
+.sevice-text a:hover,
+.check-choices a:hover {
     color: #0542bd;
     font-size: 13px;
     transform: scale(1.1);
 }
-
-
-
 
 
 
@@ -123,17 +125,83 @@ p {
     width: 100%;
 
 }
-.choices-container{
+
+.choices-container {
     padding-top: 10%;
 }
 
 .choice h6 {
     font-size: 14px;
 }
-.row-container{
+
+.row-container {
     display: flex;
+    padding-left: 20%;
+    padding-bottom: 10%;
 }
-.img-choice img{
+
+.img-choice,
+.choice-text {
     width: 50%;
 
 }
+
+.img-choice img {
+    max-width: 50%;
+}
+
+.choice-title img {
+    width: 5%;
+    height: 5%;
+    padding-top: 5px;
+}
+
+.choice-title h3 {
+    text-align: left;
+    font-size: 26px;
+}
+
+.choice-text p {
+    text-align: justify;
+    font-size: 14px;
+    width: 75%;
+    line-height:2;
+    padding-top: 5%;
+}
+.check-choices{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.check-choice {
+    display: inline-flex;
+    gap: 5%;
+    padding-top: 5%;
+}
+.check-choices a{
+    text-align: left;
+    padding-top: 5%;
+}
+/******************** statistics section  */
+.statistics{
+    background-color: #eceff7;
+    padding: 5% 10%;
+}
+.statistics-container h3{
+    text-align: center;
+    color: #EEA000;
+    font-size: 36px;
+    padding-bottom: 5%;
+}
+.statistics-text{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.statistic-text{
+    text-align: center;
+}
+.statistic-text h4{
+font-size: 26px;
+}
+.statistic-text p{
+    font-size: 12px;
+    }
