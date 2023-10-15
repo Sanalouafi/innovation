@@ -161,3 +161,64 @@ body {
 }
 
 /*end form */
+
+@media (max-width: 668px) {
+    .quetions {
+        background: url(../img/bg-support.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding-bottom: 15%;
+    }
+
+    .l-text h3 {
+        font-size: 24px;
+        padding-top: 15%;
+    }
+
+    .support-title h4 {
+        font-size: 14px;
+    }
+
+    .support-title img,
+    .quetions-text img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .quetions-text p {
+        padding-bottom: 24px;
+        padding-left: 17px;
+        font-size: 12px;
+    }
+
+    .row {
+        flex-direction: column;
+        padding-left: 25%;
+    }
+
+    .contact-image img {
+        width: 100%;
+    }
+
+    .contactUs-text h3 {
+
+        font-size: 20px;
+    }
+
+    .contactUs-text p {
+        font-size: 12px;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    .contactUs-btn {
+        margin-left: 0%;
+        padding: 10px 10%;
+        text-align: center;
+
+    }
+
+}

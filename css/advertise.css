@@ -146,8 +146,9 @@ p {
     width: 50%;
 
 }
-.img-choice{
-    width: 50%;
+
+.img-choice {
+    width:50%;
 }
 
 .img-choice img {
@@ -169,43 +170,88 @@ p {
     text-align: justify;
     font-size: 14px;
     width: 75%;
-    line-height:2;
+    line-height: 2;
     padding-top: 5%;
 }
-.check-choices{
+
+.check-choices {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
+
 .check-choice {
     display: inline-flex;
     gap: 5%;
     padding-top: 5%;
 }
-.check-choices a{
+
+.check-choices a {
     text-align: left;
     padding-top: 5%;
 }
+
 /******************** statistics section  */
-.statistics{
+.statistics {
     background-color: #eceff7;
     padding: 5% 10%;
 }
-.statistics-container h3{
+
+.statistics-container h3 {
     text-align: center;
     color: #EEA000;
     font-size: 36px;
     padding-bottom: 5%;
 }
-.statistics-text{
+
+.statistics-text {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
-.statistic-text{
+
+.statistic-text {
     text-align: center;
 }
-.statistic-text h4{
-font-size: 26px;
+
+.statistic-text h4 {
+    font-size: 26px;
 }
-.statistic-text p{
+
+.statistic-text p {
     font-size: 12px;
-    }
+}
+@media (max-width: 668px) {
+.service-cards{
+    grid-template-columns: repeat(1,1fr);
+    padding-bottom: 100%;
+}
+.choice h6{
+    font-size: 6px;
+    padding-right: 5px;
+}
+.choice img{
+    width: 75%;
+}
+.choice-title h3 {
+    font-size: 13px;
+}
+.choice-text p {
+    text-align: justify;
+    font-size: 7px;
+    padding-top: 5%;
+}
+.check-choices {
+    grid-template-columns: repeat(1, 1fr);
+}
+.check-choice h6{
+    font-size: 7px;
+}
+.services-text h2{
+    font-size: 18px;
+}
+.services-text p{
+    font-size: 10px;
+}
+.statistic-text p {
+    font-size: 10px;
+}
+}

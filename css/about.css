@@ -3,7 +3,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family:'Poppins';
+    font-family: 'Poppins';
 }
 
 
@@ -14,13 +14,14 @@
 }
 
 .row-items {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .l-text {
-    width: 50%;
+
     box-sizing: border-box;
-    
+
     margin-left: 4%;
     height: 25%;
 
@@ -29,7 +30,7 @@
 
 .l-text h2 {
     font-size: 48px;
-    margin-top: 8%;
+
     padding-right: 5%;
     text-align: center;
 }
@@ -58,13 +59,13 @@
 }
 
 .r-img {
-    width: 50%;
+
     box-sizing: border-box;
     padding: 0 10px;
 }
 
 .r-img img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .btn {
@@ -112,7 +113,7 @@
     line-height: 3;
     color: black;
 
-    
+
     margin-bottom: 20px;
     text-align: center;
     width: 50%;
@@ -176,7 +177,7 @@
 }
 
 .img-sub img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .row-item {
@@ -246,11 +247,78 @@ button {
     display: inline-flex;
 }
 
-@media screen and (max-width: 712px)  {
-	.hero-cards{
-		display: grid;
-		grid-template-columns: repeat(1,1fr);
-	}
-   
-	
+@media (max-width: 668px) {
+    .hero-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-text h5 {
+        padding-top: 5%;
+    }
+
+    .row-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .l-text h2 {
+        font-size: 1em;
+        margin-top: 20%;
+
+    }
+
+    .l-btn {
+        padding: 10px 15px;
+    }
+
+    .l-text h4 {
+        font-size: 1.5em;
+    }
+
+    .l-text p {
+        font-size: 10px;
+    }
+
+    .hero-text h2 {
+        font-size: 1em;
+    }
+
+    .hero-text p {
+        font-size: 10px;
+    }
+
+    .row-item {
+        flex-direction: column;
+        padding: 0;
+        margin: 2% 15%;
+    }
+
+    .row-text,
+    .form {
+        width: 100%;
+    }
+
+    .row-text h3 {
+        font-size: 10px;
+    }
+
+    .row-text p {
+        font-size: 5px;
+
+    }
+
+    .form {
+
+        flex-direction: column;
+    }
+
+    .form input,
+    button {
+        height: 3vh;
+        font-size: 7px;
+    }
+    .form label {
+        font-size: 7px;
+        padding-top: 2%;
+    }
 }
