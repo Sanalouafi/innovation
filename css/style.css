@@ -448,5 +448,8 @@ nav {
 	nav {
 		padding: 15px 5px;
 	}
+	.footer-section img{
+        padding-right: 0;
+    }
 
 }

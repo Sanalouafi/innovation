@@ -241,7 +241,7 @@ button {
 
 .form label {
     font-size:14px;
-    padding-top: 5%;
+    padding-top: 3%;
 }
 
 .check {
@@ -277,7 +277,7 @@ button {
     }
 
     .l-text p {
-        font-size:14px;
+        font-size:9px;
     }
 
     .hero-text h2 {
@@ -285,7 +285,7 @@ button {
     }
 
     .hero-text p {
-        font-size:14px;
+        font-size:9px;
     }
 
     .row-item {
@@ -300,11 +300,11 @@ button {
     }
 
     .row-text h3 {
-        font-size:14px;
+        font-size:9px;
     }
 
     .row-text p {
-        font-size: 12px;
+        font-size: 7px;
 
     }
 
@@ -316,10 +316,11 @@ button {
     .form input,
     button {
         height: 3vh;
-        font-size: 12px;
+        font-size: 7px;
     }
     .form label {
-        font-size: 12px;
+        font-size: 7px;
         padding-top: 2%;
     }
+   
 }
