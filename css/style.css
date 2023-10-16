@@ -120,7 +120,7 @@ nav {
 }
 
 .home-text p {
-	font-size: 12px;
+	font-size: 15px;
 	line-height: 1.2;
 	color: black;
 	margin-bottom: 20px;
@@ -224,7 +224,7 @@ nav {
 	position: absolute;
 	z-index: 1000;
 	color: white;
-	font-size: 14px;
+	font-size: 11px;
 	font-weight: bolder;
 	text-align: center;
 	padding-top: 35%;
@@ -268,8 +268,7 @@ nav {
 }
 
 .text span {
-	font-size: 14px;
-
+	font-size: 12px;
 }
 
 
