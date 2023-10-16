@@ -420,7 +420,7 @@ nav {
 		font-size: 12px;
 	}
 	header{
-		font-size: 13px;
+		font-size: 11px;
 	}
 	.logo {
 		display: flex;
@@ -428,17 +428,17 @@ nav {
 	
 	}
 	.logo span {
-		font-size: 14px;
+		font-size: 11px;
 	}
 	.menu {
-		padding-right: 2%;
+		padding-right: 0;
 	}
 	.user {
-		padding-right: 5%;
+		padding-right: 0;
 	}
 	.list-item a {
 		color: #58b4ae;
-		font-size: 14px;
+		font-size: 10px;
 	}
 	.logo img {
 		width: 10px;
@@ -446,7 +446,7 @@ nav {
 		margin-right: 5px;
 	}
 	nav {
-		padding: 10px 5px;
+		padding: 15px 5px;
 	}
 
 }
