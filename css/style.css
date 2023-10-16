@@ -217,14 +217,14 @@ nav {
 
 .card-text p {
 	color: black;
-	font-size: 10px;
+	font-size: 14px;
 }
 
 .card-img h6 {
 	position: absolute;
 	z-index: 1000;
 	color: white;
-	font-size: 10px;
+	font-size: 14px;
 	font-weight: bolder;
 	text-align: center;
 	padding-top: 35%;
@@ -268,7 +268,7 @@ nav {
 }
 
 .text span {
-	font-size: 10px;
+	font-size: 14px;
 
 }
 
@@ -406,21 +406,21 @@ nav {
 		font-size: 12px;
 	}
 	.blog-text p{
-		font-size: 10px;
+		font-size: 14px;
 	}
 	.cards{
 		grid-template-columns: repeat(1,1fr);
 	}
 	.text{
-		font-size: 10px;
+		font-size: 14px;
 		height: 100%;
 		margin-right: 4%;
 	}
 	.text span{
-		font-size: 7px;
+		font-size: 12px;
 	}
 	header{
-		font-size: 9px;
+		font-size: 13px;
 	}
 	.logo {
 		display: flex;
@@ -428,7 +428,7 @@ nav {
 	
 	}
 	.logo span {
-		font-size: 10px;
+		font-size: 14px;
 	}
 	.menu {
 		padding-right: 2%;
@@ -438,7 +438,7 @@ nav {
 	}
 	.list-item a {
 		color: #58b4ae;
-		font-size: 10px;
+		font-size: 14px;
 	}
 	.logo img {
 		width: 10px;
