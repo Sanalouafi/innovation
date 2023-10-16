@@ -4,6 +4,7 @@
 	padding: 0;
 	margin: 0;
 	font-family: 'Poppins','sans-serif';
+	list-style: none;
 }
 
 header {
@@ -49,7 +50,7 @@ nav {
 
 .menu,
 .user {
-	list-style: none;
+	
 	display: flex;
 
 }
@@ -417,6 +418,35 @@ nav {
 	}
 	.text span{
 		font-size: 7px;
+	}
+	header{
+		font-size: 9px;
+	}
+	.logo {
+		display: flex;
+		padding-left: 0;
+	
+	}
+	.logo span {
+		font-size: 10px;
+	}
+	.menu {
+		padding-right: 2%;
+	}
+	.user {
+		padding-right: 5%;
+	}
+	.list-item a {
+		color: #58b4ae;
+		font-size: 10px;
+	}
+	.logo img {
+		width: 10px;
+		height: 10px;
+		margin-right: 5px;
+	}
+	nav {
+		padding: 10px 5px;
 	}
 
 }
