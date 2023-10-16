@@ -3,14 +3,14 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Poppins','sans-serif';
+    font-family: 'Poppins', 'sans-serif';
     box-sizing: border-box;
 }
 
 
 .right-container {
     width: 100%;
-    
+
     padding-top: 10%;
 }
 
@@ -21,7 +21,7 @@
 
 .l-text {
 
-    
+
 
     margin-left: 4%;
     height: 25%;
@@ -61,7 +61,7 @@
 
 .r-img {
 
-    
+
     padding: 0 10px;
 }
 
@@ -105,8 +105,7 @@
 
     margin-bottom: 20px;
     text-align: center;
-    width: 50%;
-    padding-left: 25%;
+
 }
 
 .hero-text p {
@@ -117,8 +116,7 @@
 
     margin-bottom: 20px;
     text-align: center;
-    width: 50%;
-    padding-left: 25%;
+
 }
 
 .hero-cards {
@@ -139,7 +137,7 @@
 
 .card-text p {
 
-    font-size:14px;
+    font-size: 14px;
     color: black;
 
     padding: 5px 0;
@@ -150,9 +148,9 @@
 
 .card-text h5 {
 
-    font-size:14px;
+    font-size: 14px;
     color: black;
-    padding-top: 25%;
+    padding-top: 15%;
 
 
 }
@@ -202,7 +200,7 @@
 }
 
 .row-text p {
-    font-size:14px;
+    font-size: 14px;
 
 }
 
@@ -240,7 +238,7 @@ button {
 }
 
 .form label {
-    font-size:14px;
+    font-size: 14px;
     padding-top: 3%;
 }
 
@@ -277,7 +275,7 @@ button {
     }
 
     .l-text p {
-        font-size:9px;
+        font-size: 9px;
     }
 
     .hero-text h2 {
@@ -285,7 +283,7 @@ button {
     }
 
     .hero-text p {
-        font-size:9px;
+        font-size: 9px;
     }
 
     .row-item {
@@ -300,7 +298,7 @@ button {
     }
 
     .row-text h3 {
-        font-size:9px;
+        font-size: 9px;
     }
 
     .row-text p {
@@ -318,9 +316,10 @@ button {
         height: 3vh;
         font-size: 7px;
     }
+
     .form label {
         font-size: 7px;
         padding-top: 2%;
     }
-   
+
 }
