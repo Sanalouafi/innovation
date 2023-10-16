@@ -84,7 +84,7 @@ p {
 
 .sevice-text p {
     text-align: left;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .sevice-text {
@@ -94,7 +94,7 @@ p {
 .sevice-text a,
 .check-choices a {
     color: #7ba2f1;
-    font-size: 12px;
+    font-size: 13px;
     transition: ease 0.4s;
     transform: scale(1);
 }
@@ -217,7 +217,7 @@ p {
 }
 
 .statistic-text p {
-    font-size: 12px;
+    font-size: 13px;
 }
 @media (max-width: 668px) {
 .service-cards{
@@ -225,7 +225,7 @@ p {
     padding-bottom: 100%;
 }
 .choice h6{
-    font-size: 6px;
+    font-size: 12px;
     padding-right: 5px;
 }
 .choice img{
@@ -236,22 +236,22 @@ p {
 }
 .choice-text p {
     text-align: justify;
-    font-size: 7px;
+    font-size: 13px;
     padding-top: 5%;
 }
 .check-choices {
     grid-template-columns: repeat(1, 1fr);
 }
 .check-choice h6{
-    font-size: 7px;
+    font-size: 13px;
 }
 .services-text h2{
     font-size: 18px;
 }
 .services-text p{
-    font-size: 10px;
+    font-size: 12px;
 }
 .statistic-text p {
-    font-size: 10px;
+    font-size: 12px;
 }
 }
