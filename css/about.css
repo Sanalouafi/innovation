@@ -5,6 +5,8 @@
     margin: 0;
     font-family: 'Poppins', 'sans-serif';
     box-sizing: border-box;
+    list-style: none;
+
 }
 
 
@@ -111,13 +113,22 @@
     background-color: #F9FAFC;
 }
 
+.hero-text {
+    padding: 50px 0;
+}
+
 .hero-text h2 {
-    padding-top: 5%;
+
     font-size: 20px;
     line-height: 1.2;
-    color: black;
 
-    margin-bottom: 20px;
+
+}
+
+.hero-text h2,
+.hero-text p {
+    padding: auto 0;
+    color: black;
     text-align: center;
 
 }
@@ -125,28 +136,22 @@
 .hero-text p {
     font-size: 12px;
     line-height: 3;
-    color: black;
-
-
-    margin-bottom: 20px;
-    text-align: center;
 
 }
 
 .hero-cards {
     display: flex;
-    justify-content: space-around;
-    max-width: 70%;
-    padding-bottom: 5%;
-    margin: 0% 25%;
+    justify-content: space-evenly;
+    max-width: 100%;
+    padding-bottom: 50px;
     gap: 15px;
+    
 }
 
 .hero-img img {
 
     width: 100%;
-    object-fit: cover;
-    height: 100%;
+    height: 50%;
 }
 
 .card-text p {
@@ -172,18 +177,19 @@
 
 .hero-card {
     width: 100%;
-    height: 350px;
+    height:fit-content;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    margin-bottom: 20px;
+
 }
 
 
 
 
 /*************************** social section */
-.img-sub {
+.img-sub,
+.img-sub2 {
     position: relative;
 
 }
@@ -195,7 +201,7 @@
 .row-item {
     background-color: #F9FAFC;
     position: absolute;
-    z-index: 1000;
+    z-index: 100;
     display: flex;
     width: 70%;
     margin: 05% 15%;
@@ -367,7 +373,7 @@ button {
         background-color: #DB4A87;
         border: #DB4A87;
         padding: 0 20px;
-
+        position: absolute;
         border-radius: 5px;
         width: 50%;
     }
@@ -463,7 +469,6 @@ button {
 
     .img-sub2 {
         display: block;
-        position: relative;
         width: 100%;
         background: #f8f0ea;
     }

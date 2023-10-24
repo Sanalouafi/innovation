@@ -37,14 +37,16 @@ nav {
 .logo img {
 	width: 20px;
 	height: 20px;
-	
+
 }
 
-.mainMenu,.menu{
+.mainMenu,
+.menu {
 	padding-right: 25%;
 }
 
-.mainMenu,.menu,
+.mainMenu,
+.menu,
 .user {
 
 	display: flex;
@@ -89,7 +91,7 @@ nav .openMenu {
 	cursor: pointer;
 }
 
-nav  .closeMenu {
+nav .closeMenu {
 	font-size: 2rem;
 	display: none;
 	cursor: pointer;
@@ -338,8 +340,13 @@ nav  .closeMenu {
 	box-shadow: -5px 15px 7px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
 	margin-bottom: 20px;
+	transition: ease .40s;
+
 }
 
+.q-card:hover{
+	transform: scale(1.1);
+}
 
 
 /*********************** footer */
@@ -347,21 +354,24 @@ nav  .closeMenu {
 .footer {
 	background-color: white;
 	color: black;
-	padding: 5%;
+	padding: 10% 0;
 	font-size: 12px;
 	display: flex;
+	justify-content: center;
+	gap: 25%;
 
 }
 
 .logo-footer-section {
-	padding-left: 15%;
+	text-align: center;
+	max-width: fit-content;
 }
 
 .footer-content {
-	width: 60%;
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	padding-left: 10%;
+	grid-template-columns: repeat(4, 1fr);
+	row-gap: 20px;
+	column-gap: 20px;
 }
 
 .footer-section,
@@ -372,6 +382,7 @@ nav  .closeMenu {
 
 .logo-f {
 	display: flex;
+	justify-content: center;
 }
 
 .logo-footer-section h3,
@@ -541,14 +552,8 @@ nav  .closeMenu {
 		width: 100%;
 	}
 
-	.logo-footer-section a,
-	.logo-f {
-		padding-left: 25%;
-	}
 
-	.logo-footer-section p {
-		padding-left: 15%;
-	}
+	
 
 	.footer-content {
 		grid-template-columns: repeat(2, 1fr);
@@ -632,56 +637,56 @@ nav  .closeMenu {
 
 	.footer {
 		flex-wrap: wrap-reverse;
+
 	}
 
 	.logo-footer-section {
 		width: 100%;
 	}
 
-	.logo-footer-section a,
-	.logo-f {
-		padding-left: 25%;
-	}
-
-	.logo-footer-section p {
-		padding-left: 15%;
-	}
+	
 
 
 }
+
 /* burger menu */
 @media (max-width: 924px) {
-    nav .mainMenu {
-      height: 100vh;
-      position: fixed;
-      top: 0px;
-      right: 0px;
-      left: 0px;
-      z-index: 10;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background:#EEF4F4;
-      transition: top 1s ease 0s;
-      display: none;
-    }
-    nav .mainMenu .closeMenu {
-      display: block;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-    }
-    nav .openMenu {
-      display: block;
-    }
-    
-	.menu,.user{
+	nav .mainMenu {
+		height: 100vh;
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		left: 0px;
+		z-index: 10;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: #EEF4F4;
+		transition: top 1s ease 0s;
+		display: none;
+	}
+
+	nav .mainMenu .closeMenu {
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+
+	nav .openMenu {
+		display: block;
+	}
+
+	.menu,
+	.user {
 		flex-direction: column;
 		padding: 5% 25%;
 	}
-	.menu li ,.user li{
+
+	.menu li,
+	.user li {
 		font-size: 19px;
-		padding-bottom:25%;
+		padding-bottom: 25%;
 	}
-    
-  }
+
+}
