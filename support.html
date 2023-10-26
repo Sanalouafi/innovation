@@ -244,12 +244,21 @@
 
 </body>
 <script>
+    
     const faqs = document.querySelectorAll(".faq");
-    faqs.forEach(faq => {
-        faq.addEventListener("click", () => {
-            faq.classList.toggle("active");
-        });
+
+faqs.forEach(faq => {
+    faq.addEventListener("click", () => {
+        const activeFaq = document.querySelector(".faq.active");
+        if (activeFaq && activeFaq !== faq) {
+            activeFaq.classList.remove("active");
+        }
+        
+        faq.classList.toggle("active");
     });
+});
+
+    
 
     const form = document.getElementById('form');
     const nameInput = document.querySelector('#fullName');

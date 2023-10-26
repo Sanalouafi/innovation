@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/about.css">
     <link rel="stylesheet" type="text/css" href="css/advertise.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
         integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
     <title>innovation</title>
@@ -111,17 +112,19 @@
     <section class="clients">
         <div class="choices">
 
-            <div class="choice">
+            <div class="choice active" id="choice1" data-container="choicesContainer">
                 <h6>Why you choose our service?</h6>
             </div>
-            <div class="choice">
+            <div class="choice" id="choice2" data-container="choicesContainer2">
                 <h6>What’s our business promise?</h6>
             </div>
-            <div class="choice">
+            <div class="choice" id="choice3" data-container="choicesContainer3">
                 <h6>What’s our role model plan?</h6>
             </div>
+
         </div>
-        <div class="choices-container">
+        </div>
+        <div class="choices-container" id="choicesContainer">
             <div class="row-container">
                 <div class="choice-text">
                     <div class="choice-title">
@@ -149,6 +152,67 @@
                             <img src="img/green-check.png" alt="hey">
                             <h6>Commuter benefits</h6>
                         </div>
+                        <a href="#">Learn more ></a>
+                    </div>
+
+                </div>
+                <div class="img-choice">
+                    <img src="img/what.jpg" alt="hey">
+                </div>
+
+            </div>
+        </div>
+        <div class="choices-container" id="choicesContainer2">
+            <div class="row-container">
+                <div class="choice-text">
+                    <div class="choice-title">
+                        <h3>We will turn your idea in the successful business model framework <img src="img/emoji.png"
+                                alt="hey"></h3>
+
+                    </div>
+
+                    <p>Get your tests delivered at let home collect sample from the victory of the managments that
+                        supplies best design system guidelines ever.</p>
+                    <div class="check-choices">
+                        <div class="check-choice">
+                            <img src="img/green-check.png" alt="hey">
+                            <h6>Medical and vision</h6>
+                        </div>
+                        <div class="check-choice">
+                            <img src="img/green-check.png" alt="hey">
+                            <h6>HSAs and FSAs</h6>
+                        </div>
+                        <div class="check-choice">
+                            <img src="img/green-check.png" alt="hey">
+                            <h6>Life insurance</h6>
+                        </div>
+                        <div class="check-choice">
+                            <img src="img/green-check.png" alt="hey">
+                            <h6>Commuter benefits</h6>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="img-choice">
+                    <img src="img/what.jpg" alt="hey">
+                </div>
+
+            </div>
+        </div>
+        <div class="choices-container" id="choicesContainer3">
+            <div class="row-container">
+                <div class="choice-text">
+                    <div class="choice-title">
+                        <h3>We will turn your idea in the successful business model framework <img src="img/emoji.png"
+                                alt="hey"></h3>
+
+                    </div>
+
+                    <p>Get your tests delivered at let home collect sample from the victory of the managments that
+                        supplies best design system guidelines ever.</p>
+                    <div class="check-choices">
+
                         <a href="#">Learn more ></a>
                     </div>
 
@@ -327,6 +391,7 @@
 
 </body>
 <script src="js/script.js"></script>
+
 <script>
     /////////modals 
     var modal1 = document.getElementById("modal1");
@@ -343,7 +408,7 @@
 
     learnMoreLinks.forEach(function (link) {
         link.addEventListener("click", function () {
-                openModal(modal1);
+            openModal(modal1);
         });
     });
 
@@ -354,10 +419,51 @@
 
 
     window.addEventListener("click", function (event) {
-    if (event.target == modal1) {
-        closeModal(modal1);
+        if (event.target == modal1) {
+            closeModal(modal1);
+        }
+    });
+
+
+    ////////////////////////
+
+    document.addEventListener("DOMContentLoaded", function() {
+    const choices = document.querySelectorAll('.choice');
+    const containers = document.querySelectorAll('.choices-container');
+
+    // Function to show content for the selected choice
+    function showContent(choiceId) {
+        // Hide all containers
+        containers.forEach(container => container.style.display = 'none');
+
+        // Remove active class from all choices
+        choices.forEach(c => c.classList.remove('active'));
+
+        // Add active class to the clicked choice
+        const selectedChoice = document.getElementById(choiceId);
+        if (selectedChoice) {
+            selectedChoice.classList.add('active');
+            const containerId = selectedChoice.getAttribute('data-container');
+            const selectedContainer = document.getElementById(containerId);
+            if (selectedContainer) {
+                selectedContainer.style.display = 'block';
+            }
+        }
     }
+
+    // Set up event listeners for choices
+    choices.forEach(choice => {
+        choice.addEventListener('click', () => {
+            const choiceId = choice.id;
+            showContent(choiceId);
+        });
+    });
+
+    // Show content for the first choice when the page loads
+    const firstChoiceId = choices[0].id;
+    showContent(firstChoiceId);
 });
+
 
 
 </script>

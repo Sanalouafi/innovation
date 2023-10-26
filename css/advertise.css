@@ -116,9 +116,9 @@ p {
 .modal {
     display: none;
     position: fixed;
-    top:0;
+    top: 0;
     width: 100%;
-    height:100%;
+    height: 100%;
     backdrop-filter: blur(5px);
 }
 
@@ -148,16 +148,24 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 0 20%;
+
+}
+.choice{
+    cursor: pointer;
 }
 
 
-
 .choices-container {
+    display: none;
     padding-top: 10%;
+    width: 100%;
 }
 
 .choice h6 {
     font-size: 14px;
+}
+.choice.active h6 {
+    border-bottom: solid #A17857;
 }
 
 .row-container {
@@ -250,20 +258,37 @@ p {
 }
 
 @media (max-width: 668px) {
+    .r-text h2{
+        font-size: 30px;
+    }
     .service-cards {
         grid-template-columns: repeat(1, 1fr);
-        padding-bottom: 100%;
+        gap: 50px;
     }
 
+    .choices {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .choice {
+        margin: 0 auto;
+        width: 50%;
+    }
     .choice h6 {
         font-size: 12px;
-        padding-right: 5px;
+        text-align: center;
+        padding: 10% 0;
     }
 
     .choice img {
         width: 75%;
     }
-
+.row-container{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
     .choice-title h3 {
         font-size: 13px;
     }
@@ -281,6 +306,15 @@ p {
     .check-choice h6 {
         font-size: 13px;
     }
+    .img-choice img{
+        display: block;
+    }
+    .choice-text{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
 
     .services-text h2 {
         font-size: 18px;
@@ -289,8 +323,14 @@ p {
     .services-text p {
         font-size: 12px;
     }
-
+    .statistic-text h4 {
+        font-size: 14px;
+    }
     .statistic-text p {
         font-size: 12px;
     }
+    .statistics-container h3{
+        font-size: 16px;
+    }
 }
+
