@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
@@ -16,6 +17,32 @@
 </head>
 
 <body>
+    <style>
+        .swiper-button-prev,
+        .swiper-button-next {
+            top: 50%;
+            height: 50px;
+            width: 50px;
+            cursor: pointer;
+            color: black;
+            font-size: 1.25rem;
+            position: absolute;
+            text-align: center;
+            line-height: 50px;
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+            transform: translateY(-50%);
+            transition: transform 0.1s linear;
+        }
+        @media (max-width:600px) {
+            .swiper-button-prev,
+        .swiper-button-next{
+            display: none;
+        }
+            
+        }
+    </style>
     <!--header--->
     <header>
         <nav>
@@ -101,74 +128,83 @@
             <p>Focus only on the meaning, we take care of the design.<br> As soon as the
                 meeting end you can export in one click.</p>
         </div>
-        <div class="body-cards">
-            <div class="wrapper">
-                <i id="left" class="fa-solid fa-angle-left"></i>
-                <ul class="carousel">
-                    <li class="card">
-                        <div class="img">
-                            <img src="img/super1.png" alt="hey">
-                        </div>
-                        <div class="card-text">
-                            <h5>Emmalee Mclain</h5>
-                            <p>Product Designer</p>
-                            <div class="social-img">
-                                <img src="img/twiter.png" alt="hey">
-                                <img src="img/gitHub.png" alt="hey">
-                                <img src="img/dribble.png" alt="hey">
+       
+            <div class="swiper">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="img/super1.png" alt="hey">
+                            </div>
+                            <div class="card-text">
+                                <h5>Emmalee Mclain</h5>
+                                <p>Product Designer</p>
+                                <div class="social-img">
+                                    <img src="img/twiter.png" alt="hey">
+                                    <img src="img/gitHub.png" alt="hey">
+                                    <img src="img/dribble.png" alt="hey">
+                                </div>
                             </div>
                         </div>
-                    </li>
-                    <li class="card">
-                        <div class="img">
-                            <img src="img/super2.png" alt="hey">
-                        </div>
-                        <div class="card-text">
-                            <h5>Emmalee Mclain</h5>
-                            <p>Product Designer</p>
-                            <div class="social-img">
-                                <img src="img/twiter.png" alt="hey">
-                                <img src="img/gitHub.png" alt="hey">
-                                <img src="img/dribble.png" alt="hey">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="img/super2.png" alt="hey">
+                            </div>
+                            <div class="card-text">
+                                <h5>Emmalee Mclain</h5>
+                                <p>Product Designer</p>
+                                <div class="social-img">
+                                    <img src="img/twiter.png" alt="hey">
+                                    <img src="img/gitHub.png" alt="hey">
+                                    <img src="img/dribble.png" alt="hey">
+                                </div>
                             </div>
                         </div>
-                    </li>
-                    <li class="card">
-                        <div class="img">
-                            <img src="img/super3.png" alt="hey">
-                        </div>
-                        <div class="card-text">
-                            <h5>Emmalee Mclain</h5>
-                            <p>Product Designer</p>
-                            <div class="social-img">
-                                <img src="img/twiter.png" alt="hey">
-                                <img src="img/gitHub.png" alt="hey">
-                                <img src="img/dribble.png" alt="hey">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="img/super3.png" alt="hey">
+                            </div>
+                            <div class="card-text">
+                                <h5>Emmalee Mclain</h5>
+                                <p>Product Designer</p>
+                                <div class="social-img">
+                                    <img src="img/twiter.png" alt="hey">
+                                    <img src="img/gitHub.png" alt="hey">
+                                    <img src="img/dribble.png" alt="hey">
+                                </div>
                             </div>
                         </div>
-                    </li>
-                    <li class="card">
-                        <div class="img">
-                            <img src="img/super4.png" alt="hey">
-                        </div>
-                        <div class="card-text">
-                            <h5>Emmalee Mclain</h5>
-                            <p>Product Designer</p>
-                            <div class="social-img">
-                                <img src="img/twiter.png" alt="hey">
-                                <img src="img/gitHub.png" alt="hey">
-                                <img src="img/dribble.png" alt="hey">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="img/super4.png" alt="hey">
+                            </div>
+                            <div class="card-text">
+                                <h5>Emmalee Mclain</h5>
+                                <p>Product Designer</p>
+                                <div class="social-img">
+                                    <img src="img/twiter.png" alt="hey">
+                                    <img src="img/gitHub.png" alt="hey">
+                                    <img src="img/dribble.png" alt="hey">
+                                </div>
                             </div>
                         </div>
-                    </li>
-                    
-                    
-                </ul>
-                <i id="right" class="fa-solid fa-angle-right"></i>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+
+
             </div>
-        
-           
-        </div>
+            
+            
     </section>
 
     <!-------------------------------------- social container -->
@@ -259,5 +295,32 @@
 
 </body>
 <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        slidesPerView: 1,
+        direction: 'horizontal',
+        loop: true,
+        breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+
+    });
+
+</script>
 
 </html>
