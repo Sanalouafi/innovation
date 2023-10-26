@@ -147,27 +147,43 @@
                     <p>Have a question or concern? Contact our support team for quick assistance. We're here to help!
                     </p>
                 </div>
-                <form style="margin-top:5%;">
+                <form id="form" style="margin-top:5%;">
                     <div class="form-group">
-                        <label for="name">Full Name:</label>
-                        <input type="text" id="name" name="name" required>
+                        <label for="fullName">Full Name:</label>
+                        <div class="error">
+                            <input type="text" id="fullName" name="fullName">
+                            <span class="errorName">Invalid name</span>
+                        </div>
+
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                        <div class="error">
+                            <input type="text" id="email" name="email">
+                            <span class="errorEmail">Invalid email</span>
+                        </div>
+
                     </div>
                     <div class="form-group">
-                        <label for="name">Phone number:</label>
-                        <input type="text" id="name" name="name" required>
+                        <label for="phoneNumber">Phone number:</label>
+                        <div class="error">
+                            <input type="number" id="phoneNumber" name="phoneNumber">
+                            <span class="errorPhone">Invalid phone number</span>
+                        </div>
+
                     </div>
                     <div class="form-group">
                         <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="6" required></textarea>
+                        <div class="error">
+                            <textarea id="message" name="message" rows="6"></textarea>
+                        <span class="errorMessage">Invalid Message</span>
+                        </div>
+                        
                     </div>
-                    <div class="form-group">
-                        <a href="#" class="contactUs-btn">Submit</a>
-                    </div>
+                    <button type="submit" class="contactUs-btn">Submit</button>
+
                 </form>
+
             </div>
 
         </div>
@@ -227,15 +243,56 @@
 
 
 </body>
-<script src="js/script.js"></script>
 <script>
     const faqs = document.querySelectorAll(".faq");
     faqs.forEach(faq => {
         faq.addEventListener("click", () => {
             faq.classList.toggle("active");
-        })
-    })
+        });
+    });
+
+    const form = document.getElementById('form');
+    const nameInput = document.querySelector('#fullName');
+    const emailInput = document.getElementById('email');
+    const phoneInput = document.getElementById('phoneNumber');
+    const messageInput = document.getElementById('message');
+
+
+    const nameRegex = /^[a-zA-Z\s]+$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phoneRegex = /^\d{10}$/;
+
+
+
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        if (!nameInput.value === '' || !nameInput.value.match(nameRegex)) {
+            nameInput.nextElementSibling.style.display = 'block';
+        } else {
+            nameInput.nextElementSibling.style.display = 'none';
+        }
+
+        if (!emailInput.value.match(emailRegex)) {
+            emailInput.nextElementSibling.style.display = 'block';
+        } else {
+            emailInput.nextElementSibling.style.display = 'none';
+        }
+
+        if (!phoneInput.value.match(phoneRegex)) {
+            phoneInput.nextElementSibling.style.display = 'block';
+        } else {
+            phoneInput.nextElementSibling.style.display = 'none';
+        }
+
+        if (messageInput.value.trim() === '') {
+            messageInput.nextElementSibling.style.display = 'block';
+        } else {
+            messageInput.nextElementSibling.style.display = 'none';
+        }
+    });
+
 
 </script>
+<script src="js/script.js"></script>
 
 </html>
