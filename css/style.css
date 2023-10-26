@@ -85,14 +85,14 @@ nav {
 
 
 nav .openMenu {
-	font-size: 2rem;
+	font-size: 1rem;
 	margin: 20px;
 	display: none;
 	cursor: pointer;
 }
 
 nav .closeMenu {
-	font-size: 2rem;
+	font-size: 1rem;
 	display: none;
 	cursor: pointer;
 }
@@ -166,26 +166,31 @@ nav .closeMenu {
 	width: 100%;
 	background-color: #FFF5ED;
 }
-
-.blog-text h2 {
+.blog-text{
 	padding-top: 5%;
-	font-size: 20px;
-	line-height: 1.2;
-	color: black;
-	margin-bottom: 20px;
 	text-align: center;
+	place-items: center;
+	
+}
+.blog-text h2 {
+	font-size: 20px;
+	line-height: 1.2;	
 	width: 50%;
-	padding-left: 25%;
+	margin: 0 25%;
+
 }
 
 .blog-text p {
 	font-size: 14px;
 	line-height: 2;
-	color: black;
-	margin-bottom: 20px;
-	text-align: center;
 	width: 50%;
-	padding-left: 25%;
+	margin: 0 25%;
+
+	
+}
+.cards-con{
+	text-align: center;
+	place-items: center;
 }
 
 
